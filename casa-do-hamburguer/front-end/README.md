@@ -1,9 +1,5 @@
 # 🍔 Hamburgueria Full-Stack
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" width="700" alt="Hamburgueria"/>
-</p>
-
 Projeto **Full-Stack** desenvolvido do zero, com foco em boas práticas, arquitetura organizada e integração completa entre **Front-end**, **Back-end** e **Banco de Dados**.
 
 O sistema simula um **site de hamburgueria**, permitindo que usuários realizem **cadastro, login e pedidos**, com persistência de dados via back-end.
@@ -13,7 +9,7 @@ O sistema simula um **site de hamburgueria**, permitindo que usuários realizem 
 ## 🎬 Demonstração do Projeto
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWZ3b2h3bG9zMHRyNG5tZ3p2OWU3YjZxN2ZocXk2dTJ1bXZpZTRhMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mCRJDo24UvJMA/giphy.gif" width="650" />
+  <img width="338" height="775" alt="image" src="https://github.com/user-attachments/assets/5eec7d60-e3ec-4234-a220-bf52dbc2a169" />
 </p>
 
 ---
@@ -65,10 +61,6 @@ O sistema simula um **site de hamburgueria**, permitindo que usuários realizem 
 
 ## 📌 Funcionalidades
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3ZsZTF2bmd3dWZ4cXo5a3ZxZmdtZ2k1OHJwOXQ1MndpNXFqZWN0NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7TKMt1VVNkHV2PaE/giphy.gif" width="600"/>
-</p>
-
 - Cadastro de usuários
 - Login com autenticação
 - Listagem de produtos (hambúrgueres)
@@ -95,4 +87,4 @@ Este projeto foi desenvolvido com o objetivo de:
 Pedro Cruz
 Desenvolvedor Full-Stack em formação
 
-<p> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="30"/> </p> ```
+<p> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="30"/> </p>
