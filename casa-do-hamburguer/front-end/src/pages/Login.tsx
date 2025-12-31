@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "../components/Input";
+import { Link } from "react-router";
 
 // Login component: renders a login form with email and password inputs
 const Login = () => {
@@ -19,7 +20,9 @@ const Login = () => {
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col items-center justify-center gap-2 px-2 py-2 text-white">
-        <img src="./logo.png" alt="" className="mb-4" />
+        <Link to="/">
+          <img src="./logo.png" alt="" className="mb-4" />
+        </Link>
         <Input
           placeholder="E-mail"
           type="text"
