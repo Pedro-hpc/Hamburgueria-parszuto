@@ -1,73 +1,98 @@
-# React + TypeScript + Vite
+# 🍔 Hamburgueria Full-Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" width="700" alt="Hamburgueria"/>
+</p>
 
-Currently, two official plugins are available:
+Projeto **Full-Stack** desenvolvido do zero, com foco em boas práticas, arquitetura organizada e integração completa entre **Front-end**, **Back-end** e **Banco de Dados**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O sistema simula um **site de hamburgueria**, permitindo que usuários realizem **cadastro, login e pedidos**, com persistência de dados via back-end.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎬 Demonstração do Projeto
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWZ3b2h3bG9zMHRyNG5tZ3p2OWU3YjZxN2ZocXk2dTJ1bXZpZTRhMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/mCRJDo24UvJMA/giphy.gif" width="650" />
+</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Tecnologias Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🖥️ Front-end
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40"/>
+</p>
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React
+- TypeScript
+- HTML5
+- CSS3
+- Consumo de API REST
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🧠 Back-end
+
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40"/>
+</p>
+
+- Node.js
+- TypeScript
+- API REST
+- Autenticação de usuários
+- Validação de dados
+
+---
+
+### 🗄️ Banco de Dados
+
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40"/>
+</p>
+
+- PostgreSQL
+- Armazenamento de usuários, logins e pedidos
+
+---
+
+## 📌 Funcionalidades
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3ZsZTF2bmd3dWZ4cXo5a3ZxZmdtZ2k1OHJwOXQ1MndpNXFqZWN0NSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7TKMt1VVNkHV2PaE/giphy.gif" width="600"/>
+</p>
+
+- Cadastro de usuários
+- Login com autenticação
+- Listagem de produtos (hambúrgueres)
+- Realização de pedidos
+- Armazenamento de pedidos no banco de dados
+- Integração completa entre front-end e back-end
+
+---
+
+## 🧠 Objetivo do Projeto
+
+Este projeto foi desenvolvido com o objetivo de:
+
+- Praticar desenvolvimento **Full-Stack**
+- Aplicar **TypeScript** no front-end e back-end
+- Trabalhar com **APIs REST**
+- Implementar autenticação e persistência de dados
+- Simular um sistema real utilizado no mercado
+
+---
+
+👤 Autor
+
+Pedro Cruz
+Desenvolvedor Full-Stack em formação
+
+<p> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="30"/> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="30"/> </p> ```
