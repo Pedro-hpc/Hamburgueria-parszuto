@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Input from "../components/Input";
 import { Link } from "react-router";
+import Button from "../components/Button";
 
 // Login component: renders a login form with email and password inputs
 const Login = () => {
@@ -33,12 +34,8 @@ const Login = () => {
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button
-          className="w-full cursor-pointer items-center justify-center rounded-md bg-[#C92A0E] py-2"
-          onClick={handleSubmit}
-        >
-          Login
-        </button>
+        <Button title="Login" variant="default" />
+        <Button title="Não tenho uma conta" variant="outline" />
       </div>
     </form>
   );

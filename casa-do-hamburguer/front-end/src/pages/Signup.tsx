@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Input from "../components/Input";
 import { Link } from "react-router";
+import Button from "../components/Button";
 
 // Signup component: renders a signup form with email and password inputs
 const Signup = () => {
@@ -50,12 +51,8 @@ const Signup = () => {
           type="text"
           onChange={(e) => setCep(e.target.value)}
         />
-        <button
-          className="w-full cursor-pointer items-center justify-center rounded-md bg-[#C92A0E] py-2"
-          onClick={handleSubmit}
-        >
-          Criar Conta
-        </button>
+        <Button title="Criar conta" />
+        <Button title="Já tenho uma conta" variant="outline" />
       </div>
     </form>
   );
