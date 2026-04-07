@@ -3,6 +3,8 @@ import Login from "./pages/Login.tsx";
 import Signup from "./pages/Signup.tsx";
 import Home from "./pages/Home.tsx";
 import Header from "./components/Header.tsx";
+import Page from "./pages/Page.tsx";
+import Cart from "./pages/Cart.tsx";
 
 const Layout = () => {
   return (
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <Signup></Signup>,
+  },
+  {
+    path: "/page",
+    element: <Page></Page>,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
   },
 ]);
 

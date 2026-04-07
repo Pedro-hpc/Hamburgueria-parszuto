@@ -2,17 +2,37 @@ import { useState } from "react";
 import Input from "../components/Input";
 import { Link } from "react-router";
 import Button from "../components/Button";
+import { useNavigate } from "react-router";
 
 // Login component: renders a login form with email and password inputs
 const Login = () => {
   //var state to hold email and password values
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     console.log(email);
     console.log(password);
+
+    const response = await fetch("http://localhost:3000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      navigate("/page");
+    } else {
+      alert("email ou senha inválidos");
+    }
+
+    console.log(data);
   }
 
   return (
@@ -34,7 +54,7 @@ const Login = () => {
           type="password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button title="Login" variant="default" />
+        <Button title="Login" variant="default" type="submit" />
         <Link to="/signup" className="w-full">
           <Button title="Não tenho uma conta" variant="outline" />
         </Link>

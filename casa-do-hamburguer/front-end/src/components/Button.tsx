@@ -6,9 +6,9 @@ type buttonType = {
 const Button = ({ title, variant = "default", ...props }: buttonType) => {
   const buttonVariant = () => {
     if (variant === "default") {
-      return "w-full cursor-pointer rounded-md border-2 border-[#C92A0E] bg-[#C92A0E] py-2 text-sm text-white font-bold";
+      return "w-full cursor-pointer rounded-md border-2 border-[#C92A0E] bg-[#C92A0E] py-2 text-sm text-white font-bold transition hover:scale-105";
     } else if (variant === "outline") {
-      return "w-full cursor-pointer rounded-md border-2 border-[#C92A0E] bg-[#ffffff] py-2 text-sm font-bold text-[#C92A0E]";
+      return "w-full cursor-pointer rounded-md border-2 border-[#C92A0E] bg-[#ffffff] py-2 text-sm font-bold text-[#C92A0E] transition hover:scale-105";
     }
   };
 

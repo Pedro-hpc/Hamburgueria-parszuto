@@ -3,9 +3,12 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router/dom";
 import router from "./Router.tsx";
+import { CartProvider } from "./context/Carcontext.tsx";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+  <CartProvider>
+    <StrictMode>
+      <RouterProvider router={router} />
+    </StrictMode>
+  </CartProvider>,
 );

@@ -17,6 +17,6 @@ export async function connection() {
     await prisma.$connect();
     console.log("Conectado ao banco de dados com sucesso!");
   } catch (error) {
-    console.error("Erro ao conectar ao banco de dados:", error);
+    console.log("Erro ao conectar ao banco de dados:", error);
   }
 }
