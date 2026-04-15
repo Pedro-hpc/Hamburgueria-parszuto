@@ -1,14 +1,27 @@
 import { useCart } from "../context/Carcontext";
+import { Link } from "react-router";
+import { useState } from "react";
 // import HeaderShopp from "../components/HeaderShopp";
 
 const Cart = () => {
   const { cart } = useCart();
 
+  const [quantity, setQuantity] = useState(1);
+
+  function handleSum() {
+    setQuantity(quantity + 1);
+  }
+
+  function handleSub() {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  }
+
   const subtotal = cart.reduce(
-    (total: number, item: any) => total + item.price,
+    (total: number, item: any) => total + item.price * quantity,
     0,
   );
-
   const delivery = 8;
   const total = subtotal + delivery;
 
@@ -17,6 +30,11 @@ const Cart = () => {
       {/* <HeaderShopp /> */}
 
       <main className="mx-auto max-w-5xl px-4 py-8">
+        <div>
+          <Link to="/page" className="text-gray-500 hover:underline">
+            ← Voltar
+          </Link>
+        </div>
         <h1 className="mb-8 text-3xl font-bold">Seu Carrinho</h1>
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -37,15 +55,25 @@ const Cart = () => {
                   <div>
                     <h2 className="font-semibold">{item.name}</h2>
                     <p className="text-sm text-zinc-400">
-                      R$ {item.price.toFixed(2)}
+                      R$ {item.price.toFixed(2) * quantity}
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <button className="rounded bg-[#333] px-3 py-1">-</button>
-                  <span>1</span>
-                  <button className="rounded bg-[#333] px-3 py-1">+</button>
+                  <button
+                    className="rounded bg-[#333] px-3 py-1"
+                    onClick={handleSub}
+                  >
+                    -
+                  </button>
+                  <span>{quantity}</span>
+                  <button
+                    className="rounded bg-[#333] px-3 py-1"
+                    onClick={handleSum}
+                  >
+                    +
+                  </button>
                 </div>
               </div>
             ))}
